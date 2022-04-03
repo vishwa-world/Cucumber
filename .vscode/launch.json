@@ -16,7 +16,7 @@
             "name": "Debug (Launch)-App<lib>",
             "request": "launch",
             "mainClass": "seleniumWebActions.App",
-            "projectName": "lib",
+            "projectName": "WebActionsHyperlinkAndImage-lib",
             "preLaunchTask": "selenium-start"
         }
     ]
