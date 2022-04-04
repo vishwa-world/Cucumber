@@ -2,4 +2,11 @@
 .gradle
 
 # Ignore Gradle build output directory
-build
+lib/build/
+lib/bin/
+lib/Drivers/
+lib/.classpath
+lib/.project
+lib/.settings
+.project
+.settings

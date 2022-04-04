@@ -95,7 +95,6 @@ public class LearnImage {
 
 		// TODO: Check image "two eyes" is displayed - call the method
 		// checkElementIsDisplayed()
-		boolean isTwoEyeImgDisplayed = learnImage.checkElementIsDisplayed(imgTwoEyes);
 
 		// Step - 4 Retrieve and print the values of both images ("two eyes","broken
 		// image") image
