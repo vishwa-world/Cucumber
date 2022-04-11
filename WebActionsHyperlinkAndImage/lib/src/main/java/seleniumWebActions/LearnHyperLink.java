@@ -140,7 +140,7 @@ public class LearnHyperLink {
 		WebDriver driver = learnHyperLink.startBrowser();
 
 		// Step - 2 : Call the method openURL
-		learnHyperLink.openURL("https://web-locators-static-site-qa-gilt.vercel.app/hyperlink");
+		learnHyperLink.openURL("https://web-locators-static-site-qa.vercel.app/hyperlink");
 
 		// Step - 3 : Check whether the "Crio.Do" link is displayed
 		WebElement linkCrioDo;

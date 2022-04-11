@@ -87,7 +87,7 @@ public class LearnImage {
 		WebDriver driver = learnImage.startBrowser();
 
 		// Step - 2 : Call the method openURL
-		learnImage.openURL("https://web-locators-static-site-qa-gilt.vercel.app/Image");
+		learnImage.openURL("https://web-locators-static-site-qa.vercel.app/Image");
 
 		// Step - 3 : Check whether the "two eyes" image is displayed
 		// WebElement imgTwoEyes;
