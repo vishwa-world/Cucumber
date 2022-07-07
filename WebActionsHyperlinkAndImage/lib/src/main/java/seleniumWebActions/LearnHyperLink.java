@@ -131,16 +131,14 @@ public class LearnHyperLink {
 		driver.close();
 	}
 
-	public static void main(String[] args) throws MalformedURLException {
+	public void run() throws MalformedURLException {
 
-		// Create the object of LearnCheckbox class
-		LearnHyperLink learnHyperLink = new LearnHyperLink();
-
+	
 		// Step - 1 : Call the method startBrowser
-		WebDriver driver = learnHyperLink.startBrowser();
+		WebDriver driver = this.startBrowser();
 
 		// Step - 2 : Call the method openURL
-		learnHyperLink.openURL("https://web-locators-static-site-qa.vercel.app/hyperlink");
+		this.openURL("https://web-locators-static-site-qa.vercel.app/hyperlink");
 
 		// Step - 3 : Check whether the "Crio.Do" link is displayed
 		WebElement linkCrioDo;
@@ -174,13 +172,13 @@ public class LearnHyperLink {
 
 		// TODO: Print the count of links
 
-		// TODO: How many links are visible and not-visible. pass totalLinks one by one
-		// link to method checkElementIsDisplayed()
+		// TODO: Find number of visible and not-visible links by passing totalLinks
+        // links one by one to method checkElementIsDisplayed()
 
 		// TODO: How many links are having text "Crio.Do" - pass totalLinks one by one
 		// link to method checkTextIsPresent()
 
 		// Call the method closeBrowser
-		learnHyperLink.closeBrowser();
+		this.closeBrowser();
 	}
 }
