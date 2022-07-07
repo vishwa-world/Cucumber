@@ -78,16 +78,15 @@ public class LearnImage {
 		driver.close();
 	}
 
-	public static void main(String[] args) throws MalformedURLException {
+	public void run() throws MalformedURLException {
 
-		// Create the object of LearnCheckbox class
-		LearnImage learnImage = new LearnImage();
+		
 
 		// Step - 1 : Call the method startBrowser
-		WebDriver driver = learnImage.startBrowser();
+		WebDriver driver = this.startBrowser();
 
 		// Step - 2 : Call the method openURL
-		learnImage.openURL("https://web-locators-static-site-qa.vercel.app/Image");
+		this.openURL("https://web-locators-static-site-qa.vercel.app/Image");
 
 		// Step - 3 : Check whether the "two eyes" image is displayed
 		// WebElement imgTwoEyes;
@@ -118,6 +117,6 @@ public class LearnImage {
 		// TODO: Print the alt attribute value
 
 		// Call the method closeBrowser
-		learnImage.closeBrowser();
+		this.closeBrowser();
 	}
 }
