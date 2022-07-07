@@ -7,11 +7,11 @@ public class App {
         System.out.println("From App.java");
 
         // TODO1 - Uncomment for Milestone 1 Activity
-        LearnHyperLink learnHyperLink = new LearnHyperLink();
-        learnHyperLink.main(null);
+        //LearnHyperLink learnHyperLink = new LearnHyperLink();
+        //learnHyperLink.run();
 
         // TODO2 - Uncomment for Milestone 2 Activity
         // LearnImage learnImage = new LearnImage();
-        // learnImage.main(null);
+        // learnImage.run();
     }
 }
