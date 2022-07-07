@@ -112,8 +112,10 @@ public class LearnHyperLink {
 	 * @param text
 	 */
 	public void checkTextIsPresent(List<WebElement> webElement, String text) {
-		// TODO : Check whether the given text is present in links
+		int count=0;
+		// TODO : Check whether the given text is present in links and return the count of links containing the text
 
+		System.out.println("Number of links containing text Crio.Do is: "+count);
 	}
 
 	/**
