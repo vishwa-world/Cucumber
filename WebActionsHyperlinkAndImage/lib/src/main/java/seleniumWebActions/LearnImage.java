@@ -89,7 +89,7 @@ public class LearnImage {
 		this.openURL("https://web-locators-static-site-qa.vercel.app/Image");
 
 		// Step - 3 : Check whether the "two eyes" image is displayed
-		// WebElement imgTwoEyes;
+		WebElement imgTwoEyes;
 		// TODO: Locate the image "two eyes" and assign it to imgTwoEyes
 
 		// TODO: Check image "two eyes" is displayed - call the method
@@ -97,7 +97,7 @@ public class LearnImage {
 
 		// Step - 4 Retrieve and print the values of both images ("two eyes","broken
 		// image") image
-		// WebElement imgBrokenImg;
+		WebElement imgBrokenImg;
 		// TODO: Locate the image "broken image" and assign it to imgBrokenImg
 
 		// TODO: Retrieve src attribute value - imgTwoEyes
