@@ -6,7 +6,7 @@
         {
             "label": "selenium-start",
             "type": "shell",
-            "command": "./WebElementsHyperlinkAndImage/selenium-run.sh"
+            "command": "./selenium-run.sh"
         }
     ]
 }

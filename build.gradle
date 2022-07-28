@@ -33,4 +33,4 @@ run.dependsOn startScript
 
 test.dependsOn startScript
 
-mainClassName = 'seleniumWebActions.App'
+mainClassName = 'com.crio.seleniumWebActions.App'

@@ -15,8 +15,8 @@
             "type": "java",
             "name": "Debug (Launch)-App<lib>",
             "request": "launch",
-            "mainClass": "seleniumWebActions.App",
-            "projectName": "WebActionsHyperlinkAndImage-lib",
+            "mainClass": "com.crio.seleniumWebActions.App",
+            "projectName": "seleniumWebActions",
             "preLaunchTask": "selenium-start"
         }
     ]
