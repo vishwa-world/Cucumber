@@ -26,7 +26,7 @@ dependencies {
 buildDir = '/tmp/external_build'
 
 task startScript(type:Exec) {
-    commandLine '../selenium-run.sh'
+    commandLine './selenium-run.sh'
 }
 
 run.dependsOn startScript
