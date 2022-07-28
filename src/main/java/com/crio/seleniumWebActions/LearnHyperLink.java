@@ -1,4 +1,4 @@
-package seleniumWebActions;
+package com.crio.seleniumWebActions;
 
 import java.util.List;
 
