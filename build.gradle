@@ -19,7 +19,8 @@ repositories {
 dependencies {
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-1'
     testImplementation 'io.cucumber:cucumber-java:6.8.1'
-    testImplementation 'io.cucumber:cucumber-junit:6.8.1'
+    testImplementation 'io.cucumber:cucumber-junit:7.0.0'
+    //compile group: 'io.cucumber', name: 'cucumber-guice', version: '7.0.0'
 }
 
 configurations {
@@ -34,10 +35,12 @@ task cucumber() {
         		javaexec {
             		main = "io.cucumber.core.cli.Main"
             		classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
-            		args = ['--plugin', 'pretty', 'src/test/resources']
+            		args = ['--plugin', 'pretty','--plugin', 'html:target/cucumber-report.html','--glue','Stepdefns', 'src/test/resources/']
+                    //, '--tags', '@M5A1B'
         }
     }
 }
+
 
 test {
     // useTestNG()
@@ -65,7 +68,10 @@ test {
 
 }
 
-
+test { 
+			systemProperty "cucumber.options", System.getProperty("cucumber.options") 
+		} 
+        
 // Additional config for Crio workspace
 buildDir = '/tmp/external_build'
 
