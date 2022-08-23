@@ -7,25 +7,25 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 
-public class driverFactory {
+public class DriverFactory {
 
 	// instance of singleton class
-	private static driverFactory instanceOfSingletonBrowserClass=null;
+	private static DriverFactory instanceOfSingletonBrowserClass=null;
 	
 	
     private WebDriver driver;
 
     // Constructor
-    private driverFactory() throws MalformedURLException{
+    private DriverFactory() throws MalformedURLException{
 
     	final DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName(BrowserType.CHROME);
         driver = new RemoteWebDriver(new URL("http://localhost:8082/wd/hub"), capabilities);
     }
 
-    public static driverFactory getInstanceOfSingletonBrowserClass() throws MalformedURLException{
+    public static DriverFactory getInstanceOfSingletonBrowserClass() throws MalformedURLException{
         if(instanceOfSingletonBrowserClass==null){
-        	instanceOfSingletonBrowserClass = new driverFactory();
+        	instanceOfSingletonBrowserClass = new DriverFactory();
         }
         return instanceOfSingletonBrowserClass;
     }

@@ -12,12 +12,18 @@
 
 // public class milestone3activity1 {
 //     WebDriver driver;
-
+//      String username;
 //     @Before
 //     public void setUp() throws MalformedURLException, InterruptedException {
 
-//         driverFactory driverFac = driverFactory.getInstanceOfSingletonBrowserClass();
+//         DriverFactory driverFac = DriverFactory.getInstanceOfSingletonBrowserClass();
 //         driver = driverFac.getDriver();
+
+        // Get time stamp for generating a unique username
+      //  Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+
+        // Concatenate the timestamp to string to form unique timestamp
+      //  username = "testuser1" + "_" + String.valueOf(timestamp.getTime());
 //     }
 
 //     @Given("User is Registered")
@@ -25,7 +31,7 @@
         
 //         driver.get("https://crio-qkart-frontend-qa.vercel.app/register");
 
-//         driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("testuser1");
+//         driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys(username);
 
 //         driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("testuser1@pass");
 
